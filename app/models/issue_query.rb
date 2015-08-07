@@ -233,7 +233,7 @@ class IssueQuery < Query
         :values => subprojects.collect{|s| [s.name, s.id.to_s] }
     end
 
-    add_custom_fields_filters(issue_custom_fields)
+    add_custom_fields_filters(issue_custom_fields, nil, users)
 
     add_associations_custom_fields_filters :project, :author, :assigned_to, :fixed_version
 
