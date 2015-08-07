@@ -780,11 +780,14 @@ class Query < ActiveRecord::Base
   end
 
   # Adds a filter for the given custom field
-  def add_custom_field_filter(field, assoc=nil)
+  def add_custom_field_filter(field, assoc=nil, valid_users=nil)
     options = field.format.query_filter_options(field, self)
     if field.format.target_class && field.format.target_class <= User
       if options[:values].is_a?(Array) && User.current.logged?
         options[:values].unshift ["<< #{l(:label_me)} >>", "me"]
+      end
+      if options[:values].is_a?(Array) && project.nil? && !valid_users.nil?
+        options[:values] += valid_users.collect {|u| [u.name, u.id.to_s]}
       end
     end
 
@@ -801,9 +804,9 @@ class Query < ActiveRecord::Base
   end
 
   # Adds filters for the given custom fields scope
-  def add_custom_fields_filters(scope, assoc=nil)
+  def add_custom_fields_filters(scope, assoc=nil, valid_users=nil)
     scope.visible.where(:is_filter => true).sorted.each do |field|
-      add_custom_field_filter(field, assoc)
+      add_custom_field_filter(field, assoc, valid_users)
     end
   end
 
