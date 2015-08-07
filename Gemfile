@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem "rails", "3.2.21"
-gem "jquery-rails", "~> 3.1.1"
+gem "rails", "3.2.22"
+gem "jquery-rails", "~> 3.1.3"
 gem "coderay", "~> 1.1.0"
 gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", ">= 3.0.4"
 gem "request_store", "1.0.5"
 gem "mime-types"
-gem "rbpdf", "~> 1.18.5"
+gem "rbpdf", "~> 1.18.6"
 
 gem "i18n", "~> 0.6.11"
 
@@ -66,7 +66,7 @@ if File.exist?(database_file)
         gem "activerecord-jdbcpostgresql-adapter", :platforms => :jruby
       when /sqlite3/
         gem "sqlite3", :platforms => [:mri, :mingw]
-        gem "jdbc-sqlite3", "< 3.8", :platforms => :jruby
+        gem "jdbc-sqlite3", ">= 3.8.10.1", :platforms => :jruby
         gem "activerecord-jdbcsqlite3-adapter", :platforms => :jruby
       when /sqlserver/
         gem "tiny_tds", "~> 0.6.2", :platforms => [:mri, :mingw]
