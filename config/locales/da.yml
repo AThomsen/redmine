@@ -514,7 +514,7 @@ da:
   label_roadmap: Roadmap
   label_roadmap_due_in: Deadline
   label_roadmap_overdue: "%{value} forsinket"
-  label_roadmap_no_issues: Ingen sager i denne version
+  label_roadmap_no_issues: Ingen sager i denne udgave
   label_search: Søg
   label_result_plural: Resultater
   label_all_words: Alle ord
@@ -525,7 +525,7 @@ da:
   label_wiki_page_plural: Wiki sider
   label_index_by_title: Indhold efter titel
   label_index_by_date: Indhold efter dato
-  label_current_version: Nuværende version
+  label_current_version: Nuværende udgave
   label_preview: Forhåndsvisning
   label_feed_plural: Feeds
   label_changes_details: Detaljer for alle ændringer
@@ -551,7 +551,7 @@ da:
   label_relation_new: Ny relation
   label_relation_delete: Slet relation
   label_relates_to: relaterer til
-  label_duplicates: duplikater
+  label_duplicates: duplikerer
   label_blocks: blokerer
   label_blocked_by: blokeret af
   label_precedes: kommer før
@@ -562,7 +562,7 @@ da:
   label_start_to_end: start til slut
   label_stay_logged_in: Forbliv indlogget
   label_disabled: deaktiveret
-  label_show_completed_versions: Vis færdige versioner
+  label_show_completed_versions: Vis færdige udgaver
   label_me: mig
   label_board: Forum
   label_board_new: Nyt forum
@@ -858,7 +858,7 @@ da:
   version_status_closed: lukket
   version_status_locked: låst
   version_status_open: åben
-  error_can_not_reopen_issue_on_closed_version: En sag tildelt en lukket version kan ikke genåbnes
+  error_can_not_reopen_issue_on_closed_version: En sag tildelt en lukket udgave kan ikke genåbnes
   label_user_anonymous: Anonym
   button_move_and_follow: Flyt og overvåg
   setting_default_projects_modules: Standard moduler, aktiveret for nye projekter
@@ -902,7 +902,7 @@ da:
   text_own_membership_delete_confirmation: |-
     Du er ved at fjerne en eller flere af dine rettigheder, og kan muligvis ikke redigere projektet bagefter.
     Er du sikker på du ønsker at fortsætte?
-  label_close_versions: Luk færdige versioner
+  label_close_versions: Luk færdige udgaver
   label_board_sticky: Klistret
   label_board_locked: Låst
   permission_export_wiki_pages: Eksporter wiki sider
@@ -949,7 +949,7 @@ da:
 
   field_warn_on_leaving_unsaved: Warn me when leaving a page with unsaved text
   text_warn_on_leaving_unsaved: The current page contains unsaved text that will be lost if you leave this page.
-  label_my_queries: My custom queries
+  label_my_queries: Egne forespørgsler
   text_journal_changed_no_detail: "%{label} updated"
   label_news_comment_added: Comment added to a news
   button_expand_all: Expand all
@@ -958,18 +958,18 @@ da:
   label_additional_workflow_transitions_for_author: Additional transitions allowed when the user is the author
   label_bulk_edit_selected_time_entries: Bulk edit selected time entries
   text_time_entries_destroy_confirmation: Are you sure you want to delete the selected time entr(y/ies)?
-  label_role_anonymous: Anonymous
-  label_role_non_member: Non member
-  label_issue_note_added: Note added
-  label_issue_status_updated: Status updated
-  label_issue_priority_updated: Priority updated
+  label_role_anonymous: Anonym
+  label_role_non_member: Ikke-medlem
+  label_issue_note_added: Note tilføjet
+  label_issue_status_updated: Status opdateret
+  label_issue_priority_updated: Prioritet opdateret
   label_issues_visibility_own: Issues created by or assigned to the user
-  field_issues_visibility: Issues visibility
-  label_issues_visibility_all: All issues
-  permission_set_own_issues_private: Set own issues public or private
-  field_is_private: Private
-  permission_set_issues_private: Set issues public or private
-  label_issues_visibility_public: All non private issues
+  field_issues_visibility: Sagssynlighed
+  label_issues_visibility_all: Alle sager
+  permission_set_own_issues_private: Sæt egne sager offentlige eller private
+  field_is_private: Privat
+  permission_set_issues_private: Sæt sager offentlige eller private
+  label_issues_visibility_public: Alle ikke-private sager
   text_issues_destroy_descendants_confirmation: This will also delete %{count} subtask(s).
   field_commit_logs_encoding: Kodning af Commit beskeder
   field_scm_path_encoding: Path encoding
@@ -983,7 +983,7 @@ da:
   text_scm_command_version: Version
   label_git_report_last_commit: Report last commit for files and directories
   notice_issue_successful_create: Issue %{id} created.
-  label_between: between
+  label_between: mellem
   setting_issue_group_assignment: Allow issue assignment to groups
   label_diff: diff
   text_git_repository_note: Repository is bare and local (e.g. /gitrepo, c:\gitrepo)
@@ -993,7 +993,7 @@ da:
   description_user_mail_notification: Mail notification settings
   description_date_from: Enter start date
   description_message_content: Message content
-  description_available_columns: Available Columns
+  description_available_columns: Tilgængelige kolonner
   description_date_range_interval: Choose range by selecting start and end date
   description_issue_category_reassign: Choose issue category
   description_search: Searchfield
@@ -1003,7 +1003,7 @@ da:
   description_date_to: Enter end date
   description_query_sort_criteria_attribute: Sort attribute
   description_wiki_subpages_reassign: Choose new parent page
-  description_selected_columns: Selected Columns
+  description_selected_columns: Valgte kolonner
   label_parent_revision: Parent
   label_child_revision: Child
   error_scm_annotate_big_text_file: The entry cannot be annotated, as it exceeds the maximum text file size.
@@ -1016,14 +1016,14 @@ da:
   error_attachment_too_big: This file cannot be uploaded because it exceeds the maximum allowed file size (%{max_size})
   notice_failed_to_save_time_entries: "Failed to save %{count} time entrie(s) on %{total} selected: %{ids}."
   label_x_issues:
-    zero:  0 sag
+    zero:  0 sager
     one:   1 sag
     other: "%{count} sager"
   label_repository_new: New repository
   field_repository_is_default: Main repository
   label_copy_attachments: Copy attachments
   label_item_position: "%{position}/%{count}"
-  label_completed_versions: Completed versions
+  label_completed_versions: Færdige udgaver
   text_project_identifier_info: Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.
   field_multiple: Multiple values
   setting_commit_cross_project_ref: Allow issues of all the other projects to be referenced and fixed
@@ -1033,7 +1033,7 @@ da:
   text_issue_conflict_resolution_cancel: Discard all my changes and redisplay %{link}
   permission_manage_related_issues: Manage related issues
   field_auth_source_ldap_filter: LDAP filter
-  label_search_for_watchers: Search for watchers to add
+  label_search_for_watchers: Tilføj til overvågere
   notice_account_deleted: Your account has been permanently deleted.
   setting_unsubscribe: Allow users to delete their own account
   button_delete_my_account: Delete my account
@@ -1045,14 +1045,14 @@ da:
   setting_session_lifetime: Session maximum lifetime
   setting_session_timeout: Session inactivity timeout
   label_session_expiration: Session expiration
-  permission_close_project: Close / reopen the project
-  label_show_closed_projects: View closed projects
-  button_close: Close
-  button_reopen: Reopen
-  project_status_active: active
-  project_status_closed: closed
-  project_status_archived: archived
-  text_project_closed: This project is closed and read-only.
+  permission_close_project: Luk / genåbn projekt
+  label_show_closed_projects: Vis lukkede projekter
+  button_close: Luk
+  button_reopen: Genåbn
+  project_status_active: aktiv
+  project_status_closed: lukket
+  project_status_archived: arkiveret
+  text_project_closed: Projektet er lukket og skrivebeskyttet.
   notice_user_successful_create: User %{id} created.
   field_core_fields: Standard fields
   field_timeout: Timeout (in seconds)
@@ -1060,45 +1060,45 @@ da:
   setting_thumbnails_size: Thumbnails size (in pixels)
   label_status_transitions: Status transitions
   label_fields_permissions: Fields permissions
-  label_readonly: Read-only
-  label_required: Required
+  label_readonly: Skrivebeskyttet
+  label_required: Påkrævet
   text_repository_identifier_info: Only lower case letters (a-z), numbers, dashes and underscores are allowed.<br />Once saved, the identifier cannot be changed.
   field_board_parent: Parent forum
-  label_attribute_of_project: Project's %{name}
-  label_attribute_of_author: Author's %{name}
-  label_attribute_of_assigned_to: Assignee's %{name}
-  label_attribute_of_fixed_version: Target version's %{name}
-  label_copy_subtasks: Copy subtasks
-  label_copied_to: copied to
-  label_copied_from: copied from
-  label_any_issues_in_project: any issues in project
-  label_any_issues_not_in_project: any issues not in project
-  field_private_notes: Private notes
-  permission_view_private_notes: View private notes
-  permission_set_notes_private: Set notes as private
-  label_no_issues_in_project: no issues in project
+  label_attribute_of_project: Projektets %{name}
+  label_attribute_of_author: Forfatters %{name}
+  label_attribute_of_assigned_to: Assignatars %{name}
+  label_attribute_of_fixed_version: Versionens %{name}
+  label_copy_subtasks: Kopier undersager
+  label_copied_to: kopieret til
+  label_copied_from: kopieret fra
+  label_any_issues_in_project: alle sager i projekt
+  label_any_issues_not_in_project: alle sager ikke i projekt
+  field_private_notes: Private noter
+  permission_view_private_notes: Se private noter
+  permission_set_notes_private: Sæt noter som private
+  label_no_issues_in_project: ingen sager i projektet
   label_any: alle
-  label_last_n_weeks: last %{count} weeks
+  label_last_n_weeks: sidste %{count} uger
   setting_cross_project_subtasks: Allow cross-project subtasks
   label_cross_project_descendants: Med underprojekter
   label_cross_project_tree: Med projekttræ
   label_cross_project_hierarchy: Med projekthierarki
   label_cross_project_system: Med alle projekter
-  button_hide: Hide
+  button_hide: Skjul
   setting_non_working_week_days: Non-working days
-  label_in_the_next_days: in the next
-  label_in_the_past_days: in the past
-  label_attribute_of_user: User's %{name}
+  label_in_the_next_days: i de næste
+  label_in_the_past_days: i de sidste
+  label_attribute_of_user: Brugers %{name}
   text_turning_multiple_off: If you disable multiple values, multiple values will be
     removed in order to preserve only one value per item.
-  label_attribute_of_issue: Issue's %{name}
+  label_attribute_of_issue: Sagens %{name}
   permission_add_documents: Add documents
   permission_edit_documents: Edit documents
   permission_delete_documents: Delete documents
   label_gantt_progress_line: Progress line
   setting_jsonp_enabled: Enable JSONP support
   field_inherit_members: Inherit members
-  field_closed_on: Closed
+  field_closed_on: Lukket
   field_generate_password: Generate password
   setting_default_projects_tracker_ids: Default trackers for new projects
   label_total_time: Total
