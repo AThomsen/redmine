@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem "rails", "3.2.22"
-gem "jquery-rails", "~> 3.1.3"
+gem "rack-cache", "1.2" if RUBY_VERSION < "1.9.3"
+gem "jquery-rails", "~> 3.1.4"
 gem "coderay", "~> 1.1.0"
 gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", ">= 3.0.4"
@@ -33,8 +34,7 @@ platforms :mri, :mingw do
 
   # Optional Markdown support, not for JRuby
   group :markdown do
-    # TODO: upgrade to redcarpet 3.x when ruby1.8 support is dropped
-    gem "redcarpet", "~> 2.3.0"
+    gem "redcarpet", (RUBY_VERSION < "1.9" ? "~> 2.3.0" : "~> 3.3.2")
   end
 end
 
